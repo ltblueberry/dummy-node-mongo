@@ -1,0 +1,27 @@
+{
+  "name": "play-node-mongo",
+  "version": "1.0.0",
+  "description": "Простенький проектик на NodeJS + MongoDB\r Для тестирования окружений",
+  "main": "bin/www",
+  "scripts": {
+    "test": "mocha",
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/handsappdevelopment/play-node-postgres.git"
+  },
+  "author": "handsapp unknown",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/handsappdevelopment/play-node-mongo#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "supertest": "^4.0.2"
+  }
+}
