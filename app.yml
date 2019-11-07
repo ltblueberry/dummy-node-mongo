@@ -1,0 +1,8 @@
+apps:
+  - script: ./bin/www
+    name: 'dummy-app'
+    instances: 1
+    watch: false
+    env_staging:
+      NODE_ENV: staging
+      DATABASE_CONNECTION_STRING: mongodb://<mongodb_ip_address>:27017/play
