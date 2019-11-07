@@ -21,3 +21,8 @@ You can check status of application with next command
 pm2 status
 ```
 
+# Start application with env variables
+```
+pm2 start app.yml --env staging --log log/application.log
+```
+
