@@ -26,3 +26,9 @@ pm2 status
 pm2 start app.yml --env staging --log log/application.log
 ```
 
+# Tests
+```
+node ./node_modules/mocha/bin/mocha test/*.test.js
+```
+
+
