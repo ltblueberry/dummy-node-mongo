@@ -1,5 +1,5 @@
 {
-  "name": "play-node-mongo",
+  "name": "dummy-node-mongo",
   "version": "1.0.0",
   "description": "Простенький проектик на NodeJS + MongoDB\r Для тестирования окружений",
   "main": "bin/www",
@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/handsappdevelopment/play-node-postgres.git"
+    "url": "git@github.com:ltblueberry/dummy-node-mongo.git"
   },
-  "author": "handsapp unknown",
+  "author": "ltblueberry",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/handsappdevelopment/play-node-mongo#readme",
+  "homepage": "",
   "dependencies": {
     "express": "^4.16.4",
     "mongoose": "^5.4.19",
