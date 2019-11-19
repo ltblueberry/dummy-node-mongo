@@ -1,4 +1,4 @@
-# Dummy Nodejs MongoDB
+# Dummy Nodejs MongoDB [![Build Status](https://travis-ci.com/ltblueberry/dummy-node-mongo.svg?branch=master)](https://travis-ci.com/ltblueberry/dummy-node-mongo)
 
 It is a dummy NodeJS application with MongoDB database, that will be used in next infrastructure projects.
 
@@ -35,4 +35,4 @@ npm test
 Also GitLab-CI configuration file was added **.gitlab-ci.yml**.
 You need to have runner with `docker` tag.
 
-
+Also Travis-CI configuration file was added **.travis.yml**
