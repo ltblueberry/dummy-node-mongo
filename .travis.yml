@@ -7,7 +7,5 @@ before_install:
   - npm install
 services:
   - mongodb
-env:
-  - DATABASE_CONNECTION_STRING="mongodb://mongodb/test"
 script:
   - npm test
