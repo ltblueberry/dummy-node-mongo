@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "13"
+cache:
+  npm: true
+before_install:
+  - npm install
+services:
+  - mongo
+env:
+  - DATABASE_CONNECTION_STRING="mongodb://mongo/test"
+script:
+  - npm test
