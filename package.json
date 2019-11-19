@@ -4,7 +4,7 @@
   "description": "Простенький проектик на NodeJS + MongoDB\r Для тестирования окружений",
   "main": "bin/www",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha test/*.test.js --exit",
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www"
   },

@@ -27,8 +27,12 @@ pm2 start app.yml --env staging --log log/application.log
 ```
 
 # Tests
+To run tests execute next command
 ```
-node ./node_modules/mocha/bin/mocha test/*.test.js
+npm test
 ```
+
+Also GitLab-CI configuration file was added **.gitlab-ci.yml**.
+You need to have runner with `docker` tag.
 
 

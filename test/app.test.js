@@ -31,6 +31,7 @@ it("GET /elements should return json array", function (done) {
 
     request(app)
         .get("/elements")
+        .expect(200)
         .expect(function (response) {
             const elements = response.body;
             const values = elements.map(element => element.value);

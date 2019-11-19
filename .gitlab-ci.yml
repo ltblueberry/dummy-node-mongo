@@ -1,0 +1,41 @@
+image: node:13.1
+
+stages:
+  - build
+  - test
+  - deploy
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+  - node_modules/
+
+
+variables:
+  DATABASE_CONNECTION_STRING: 'mongodb://mongo/test'
+
+before_script:
+  - npm install
+
+build_job:
+  stage: build
+  script:
+    - echo 'Building'
+  tags:
+    - docker
+
+test_job:
+  stage: test
+  services:
+    - mongo:latest
+  script:
+    - npm test
+  tags:
+    - docker
+
+deploy_job:
+  stage: deploy
+  script:
+    - echo 'Deploy'
+  tags:
+    - docker
