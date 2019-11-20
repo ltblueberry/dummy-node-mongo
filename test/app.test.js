@@ -34,8 +34,10 @@ it("GET /elements should return json array", function (done) {
         .expect(200)
         .expect(function (response) {
             const elements = response.body;
-            const values = elements.map(element => element.value);
-            assert.deepEqual(values, ['foo', 'bar', 'baz', 'qux']);
+            const values = elements.map(element => element.value).sort((a, b) => {
+                return a.localeCompare(b);
+            });
+            assert.deepEqual(values, ['bar', 'baz', 'foo', 'qux']);
         })
         .end(done);
 });
