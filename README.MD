@@ -36,3 +36,9 @@ Also GitLab-CI configuration file was added **.gitlab-ci.yml**.
 You need to have runner with `docker` tag.
 
 Also Travis-CI configuration file was added **.travis.yml**
+
+## License
+
+**[MIT License](LICENSE)**
+
+Copyright (c) 2019 [ltblueberry](https://github.com/ltblueberry)
